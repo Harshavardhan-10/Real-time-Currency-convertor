@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Currency Converter</title>
+    <link rel="stylesheet" href="CurrencyConvertor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="converter-card">
+            <div class="header">
+                <h1 class="title">Global Currency Converter</h1>
+                <div class="update-info" id="update-info">Rates are not real-time</div>
+            </div>
+
+            <div class="converter-body">
+                <div class="input-group">
+                    <div class="input-container">
+                        <input type="number" 
+                               id="amount" 
+                               class="currency-input"
+                               placeholder="0.00"
+                               step="0.01"
+                               min="0"
+                               autofocus>
+                        <div class="currency-select">
+                            <select id="from-currency"></select>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <button class="swap-btn" id="swap-btn">
+                        <i class="fas fa-exchange-alt"></i>
+                    </button>
+
+                    <div class="input-container">
+                        <input type="number" 
+                               id="converted-amount" 
+                               class="currency-input"
+                               placeholder="0.00"
+                               readonly>
+                        <div class="currency-select">
+                            <select id="to-currency"></select>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="input-container">
+                        <input type="number" 
+                               id="converted-amount-2" 
+                               class="currency-input"
+                               placeholder="0.00"
+                               readonly>
+                        <div class="currency-select">
+                            <select id="to-currency-2"></select>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="status-container">
+                    <div class="loading-spinner" id="loading-spinner"></div>
+                    <div class="error-message" id="error-message"></div>
+                </div>
+
+                <div class="exchange-rate-info" id="rate-info"></div>
+
+                <div class="action-buttons">
+                    <button class="convert-btn" id="convert-btn">
+                        Convert Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="conversion-history" id="history-container">
+                <h3>Conversion History</h3>
+                <ul id="history-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="CurrencyConvertor.js"></script>
+</body>
+</html>
