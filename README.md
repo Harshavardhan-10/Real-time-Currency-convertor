@@ -11,4 +11,3 @@ A compact real-time currency converter supporting simultaneous conversion to two
    ```
 3. Open `CurrencyConvertor.html` in a browser.
 
-> **Note:** `config.js` is gitignored. Your API key stays local and won't be committed.
