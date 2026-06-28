@@ -5,7 +5,7 @@ A compact real-time currency converter supporting simultaneous conversion to two
 ## Setup
 
 1. **Clone the repo**
-2. **Add your API key** — Copy`config.js` and replace the placeholder with your own key from [ExchangeRate-API](https://www.exchangerate-api.com/):
+2. **Add your API key** — Rename `config.example.js` file as `config.js` and replace the placeholder with your own key from [ExchangeRate-API](https://www.exchangerate-api.com/):
    ```js
    const API_KEY = 'your-actual-api-key';
    ```
